@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".bookDetail.BookDetailFragment">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:fitsSystemWindows="true">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="?attr/colorPrimary"
+                app:statusBarScrim="@color/white"
+                app:layout_scrollFlags="scroll"
+                app:titleEnabled="false"
+                android:fitsSystemWindows="true"
+                app:expandedTitleTextAppearance="@style/TextAppearance.App.CollapsingToolbar.Expanded"
+                app:collapsedTitleTextAppearance="@style/TextAppearance.App.CollapsingToolbar.Collapsed">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardView"
+                        android:layout_width="138dp"
+                        android:layout_height="187dp"
+                        android:layout_marginTop="60dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/kata_cover" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:id="@+id/title_in_collapsed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Kata"
+                        android:textAlignment="center"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+                    <TextView
+                        android:id="@+id/author_in_collapsed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rintik Sedu"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/title_in_collapsed" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:backgroundTint="#10000000"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/author_in_collapsed">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp">
+
+                            <TextView
+                                android:id="@+id/genre"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Genre"
+                                android:textColor="@color/white"
+                                app:layout_constraintEnd_toStartOf="@+id/halaman"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/halaman"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Halaman"
+                                android:textColor="@color/white"
+                                app:layout_constraintEnd_toStartOf="@+id/disukai"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toEndOf="@+id/genre"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/disukai"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Disukai"
+                                android:textColor="@color/white"
+                                app:layout_constraintEnd_toStartOf="@+id/bahasa"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toEndOf="@+id/halaman"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/bahasa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bahasa"
+                                android:textColor="@color/white"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toEndOf="@+id/disukai"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/genre_info"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Romantis"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="@+id/genre"
+                                app:layout_constraintStart_toStartOf="@+id/genre"
+                                app:layout_constraintTop_toBottomOf="@+id/genre" />
+
+                            <TextView
+                                android:id="@+id/halaman_info"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="240"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="@+id/halaman"
+                                app:layout_constraintStart_toStartOf="@+id/halaman"
+                                app:layout_constraintTop_toBottomOf="@+id/halaman" />
+
+                            <TextView
+                                android:id="@+id/disukai_info"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="240 K"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="@+id/disukai"
+                                app:layout_constraintStart_toStartOf="@+id/disukai"
+                                app:layout_constraintTop_toBottomOf="@+id/disukai" />
+
+                            <TextView
+                                android:id="@+id/bahasa_info"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Indonesia"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="@+id/bahasa"
+                                app:layout_constraintStart_toStartOf="@+id/bahasa"
+                                app:layout_constraintTop_toBottomOf="@+id/bahasa" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/topAppBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:popupTheme="@style/Widget.MaterialComponents.Toolbar.Primary"
+                    app:layout_collapseMode="pin"
+                    app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_24"
+                    app:menu="@menu/appbar_menu"
+                    android:elevation="0dp"/>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="20dp" />
+
+                <TextView
+                    android:id="@+id/ringkasan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:text="Ringkasan"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/guideline5"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/ringkasan_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/ringkasan"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/guideline5"
+                    app:layout_constraintTop_toBottomOf="@+id/ringkasan" />
+
+                <TextView
+                    android:id="@+id/buku_lainnya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:text="Buku Lainnya"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/guideline5"
+                    app:layout_constraintTop_toBottomOf="@+id/ringkasan_info" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/buku_lainnya_rv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buku_lainnya" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Buku App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="ringkasan">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis parturient sit turpis aliquam. Pulvinar turpis nullam lectus volutpat eget in. Turpis nisl est lectus mi praesent sit. Potenti consequat phasellus ipsum at lobortis vestibulum, sit nullam eleifend.\n\n
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis parturient sit turpis aliquam. Pulvinar turpis nullam lectus volutpat eget in. Turpis nisl est lectus mi praesent sit. Potenti consequat phasellus ipsum at lobortis vestibulum, sit nullam eleifend.
+    </string>
+
+    <string name="biografi">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis parturient sit turpis aliquam. Pulvinar turpis nullam lectus volutpat eget in. Turpis nisl est lectus mi praesent sit. Potenti consequat phasellus ipsum at lobortis vestibulum, sit nullam eleifend.\n\n
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis parturient sit turpis aliquam. Pulvinar turpis nullam lectus volutpat eget in. Turpis nisl est lectus mi praesent sit. Potenti consequat phasellus ipsum at lobortis vestibulum, sit nullam eleifend.\n\n
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis parturient sit turpis aliquam. Pulvinar turpis nullam lectus volutpat eget in. Turpis nisl est lectus mi praesent sit. Potenti consequat phasellus ipsum at lobortis vestibulum, sit nullam eleifend.
+    </string>
+</resources>
