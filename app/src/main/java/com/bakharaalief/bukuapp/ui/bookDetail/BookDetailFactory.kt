@@ -1,8 +1,8 @@
-package com.example.bukuapp.bookDetail
+package com.bakharaalief.bukuapp.ui.bookDetail
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.bukuapp.model.Book
+import com.bakharaalief.bukuapp.data.model.Book
 
 class BookDetailFactory(private val book: Book) : ViewModelProvider.Factory {
 

@@ -1,4 +1,4 @@
-package com.example.bukuapp.model
+package com.bakharaalief.bukuapp.data.model
 
 data class Author(
         val name : String,

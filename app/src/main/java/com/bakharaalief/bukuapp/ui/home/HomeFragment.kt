@@ -1,4 +1,4 @@
-package com.example.bukuapp.home
+package com.bakharaalief.bukuapp.ui.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,10 +8,7 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.bukuapp.databinding.FragmentHomeBinding
-import com.example.bukuapp.util.AuthorAdapter
-import com.example.bukuapp.util.BookAdapter
-import com.example.bukuapp.util.HOME_FRAGMENT
+import com.bakharaalief.bukuapp.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
 

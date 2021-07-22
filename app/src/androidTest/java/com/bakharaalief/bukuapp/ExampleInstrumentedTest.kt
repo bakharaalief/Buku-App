@@ -1,4 +1,4 @@
-package com.example.bukuapp
+package com.bakharaalief.bukuapp
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

@@ -1,10 +1,10 @@
-package com.example.bukuapp.home
+package com.bakharaalief.bukuapp.ui.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.bukuapp.model.Author
-import com.example.bukuapp.model.Book
+import com.bakharaalief.bukuapp.data.model.Author
+import com.bakharaalief.bukuapp.data.model.Book
 
 class HomeViewModel : ViewModel() {
 

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.bukuapp.home.HomeFragment"
+        android:name="com.bakharaalief.bukuapp.ui.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -20,19 +20,19 @@
 
     <fragment
         android:id="@+id/bookDetailFragment"
-        android:name="com.example.bukuapp.bookDetail.BookDetailFragment"
+        android:name="com.bakharaalief.bukuapp.ui.bookDetail.BookDetailFragment"
         android:label="BookDetailFragment"
         tools:layout="@layout/book_detail_fragment">
-        <argument
-            android:name="book_data"
-            app:argType="com.example.bukuapp.model.Book" />
         <action
             android:id="@+id/action_bookDetailFragment_self"
             app:destination="@id/bookDetailFragment" />
+        <argument
+            android:name="book_data"
+            app:argType="com.bakharaalief.bukuapp.data.model.Book" />
     </fragment>
     <fragment
         android:id="@+id/authorDetailFragment"
-        android:name="com.example.bukuapp.AuthorDetailFragment"
+        android:name="com.bakharaalief.bukuapp.ui.authorDetail.AuthorDetailFragment"
         android:label="fragment_author_detail"
         tools:layout="@layout/fragment_author_detail" />
 

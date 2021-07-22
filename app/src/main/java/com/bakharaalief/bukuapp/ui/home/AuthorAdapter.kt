@@ -1,4 +1,4 @@
-package com.example.bukuapp.util
+package com.bakharaalief.bukuapp.ui.home
 
 import android.content.res.Resources
 import android.view.LayoutInflater
@@ -10,8 +10,8 @@ import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.bukuapp.R
-import com.example.bukuapp.model.Author
+import com.bakharaalief.bukuapp.R
+import com.bakharaalief.bukuapp.data.model.Author
 import com.squareup.picasso.Picasso
 
 class AuthorAdapter : RecyclerView.Adapter<AuthorAdapter.AuthorHolder>() {

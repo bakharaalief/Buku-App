@@ -1,9 +1,9 @@
-package com.example.bukuapp.bookDetail
+package com.bakharaalief.bukuapp.ui.bookDetail
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.bukuapp.model.Book
+import com.bakharaalief.bukuapp.data.model.Book
 
 class BookDetailViewModel(book: Book) : ViewModel() {
 

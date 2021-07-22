@@ -1,4 +1,4 @@
-package com.example.bukuapp
+package com.bakharaalief.bukuapp
 
 import org.junit.Test
 
